@@ -1,5 +1,6 @@
 :root {
     --one-color: #111;
+    --f-color: #fff;
     --lightgray-color: #E9ECEF;
     --black-color: #212529;
     --bkgd-color: #ffea3d;
@@ -23,11 +24,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 30vw;
-    height: 100vh;
+    height: 96vh;
     position: fixed;
     color: var(--black-color);
     background-color: var(--bkgd-color);
     border-right: 1px solid var(--one-color);
+    border-bottom: 1px solid var(--one-color);
 }
 
 nav header {
@@ -173,6 +175,22 @@ main a:visited {
 
 
 
+footer {
+    padding: 5px 10px;
+    text-align: center;
+    color: var(--f-color);
+    background-color: var(--one-color);
+    z-index: 10;
+}
+
+footer .copyright {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
 /* Responsive Design */
 
 @media screen and (min-width: 768px) and (max-width: 1300px) {
@@ -223,6 +241,10 @@ main a:visited {
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
 
+    nav {
+        height: 93.7vh;
+    }
+
     nav header {
         font-size: 20px;
     }
@@ -234,7 +256,7 @@ main a:visited {
     nav ul li {
         margin: 10px;
         padding: 10px 5px;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     header {
